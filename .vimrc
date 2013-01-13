@@ -6,13 +6,15 @@ set shiftwidth=4
 set expandtab
 set tabstop=4
 
+set number
+
 " Fonts
-set guifont=Menlo:h14
+set guifont=Andale\ Mono:h14
 
 " Colors
 syntax enable
 
 try
-    colorscheme railscasts
+    colorscheme desert
 catch
 endtry
