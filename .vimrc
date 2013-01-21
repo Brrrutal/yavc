@@ -18,3 +18,8 @@ try
     colorscheme desert
 catch
 endtry
+
+" Various experimental settings
+
+" Make tabs always visible in UI.
+set showtabline=2
