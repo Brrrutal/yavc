@@ -2,7 +2,7 @@
 "
 " Name:       xoria256.vim
 " Version:    1.1
-" Maintainer: Dmitriy Y. Zotikov (xio) <xio@ungrund.org>
+" Maintainer:	Dmitriy Y. Zotikov (xio) <xio@ungrund.org>
 "
 " Should work in recent 256 color terminals.  88-color terms like urxvt are
 " unsupported.
@@ -44,17 +44,17 @@ hi CursorColumn                           ctermbg=238 guibg=#444444
 hi Cursor                                 ctermbg=214 guibg=#ffaf00
 hi CursorLine                             ctermbg=238 guibg=#444444
 hi FoldColumn   ctermfg=248 guifg=#a8a8a8 ctermbg=bg  guibg=bg
-hi Folded       ctermfg=255 guifg=#eeeeee ctermbg=60  guibg=#5f5f87
+hi Folded       ctermfg=255 guifg=#afafdf ctermbg=60  guibg=#1c1c1c
 hi IncSearch    ctermfg=0   guifg=#000000 ctermbg=223 guibg=#ffdfaf cterm=none gui=none
 hi NonText      ctermfg=248 guifg=#a8a8a8                           cterm=bold gui=bold
 hi Pmenu        ctermfg=0   guifg=#000000 ctermbg=246 guibg=#949494
 hi PmenuSbar                              ctermbg=243 guibg=#767676
 hi PmenuSel     ctermfg=0   guifg=#000000 ctermbg=243 guibg=#767676
 hi PmenuThumb                             ctermbg=252 guibg=#d0d0d0
-hi Search       ctermfg=0   guifg=#000000 ctermbg=149 guibg=#afdf5f
+hi Search       ctermfg=0   guifg=#ffffff ctermbg=149 guibg=#577faf            gui=bold
 hi SignColumn   ctermfg=248 guifg=#a8a8a8
 hi SpecialKey   ctermfg=77  guifg=#5fdf5f
-hi StatusLine                             ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
+hi StatusLine               guifg=#000000 ctermbg=239 guibg=#afdf87 cterm=bold gui=bold
 hi StatusLineNC                           ctermbg=237 guibg=#3a3a3a cterm=none gui=none
 hi TabLine      ctermfg=fg  guifg=fg      ctermbg=242 guibg=#666666 cterm=underline gui=underline
 hi TabLineFill  ctermfg=fg  guifg=fg      ctermbg=242 guibg=#666666 cterm=underline gui=underline
@@ -69,7 +69,7 @@ hi Constant     ctermfg=229 guifg=#ffffaf
 hi Error        ctermfg=15  guifg=#ffffff ctermbg=1   guibg=#800000
 hi ErrorMsg     ctermfg=15  guifg=#ffffff ctermbg=1   guibg=#800000
 hi Identifier   ctermfg=182 guifg=#dfafdf                           cterm=none
-hi Ignore       ctermfg=238 guifg=#444444
+"hi Ignore       ctermfg=238 guifg=#444444
 hi LineNr       ctermfg=248 guifg=#a8a8a8
 hi MatchParen   ctermfg=188 guifg=#dfdfdf ctermbg=68  guibg=#5f87df cterm=bold gui=bold
 hi Number       ctermfg=180 guifg=#dfaf87

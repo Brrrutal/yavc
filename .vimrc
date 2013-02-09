@@ -12,6 +12,9 @@ set tabstop=4
 
 set number
 
+" Turn the beep off
+set vb
+
 " Fonts
 set guifont=Andale\ Mono:h14
 
@@ -19,7 +22,7 @@ set guifont=Andale\ Mono:h14
 syntax enable
 
 try
-    colorscheme xoria256
+    colorscheme zenburn
 catch
 endtry
 
