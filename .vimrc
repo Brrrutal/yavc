@@ -1,3 +1,7 @@
+" Launching pathogen
+execute pathogen#infect()
+execute pathogen#helptags()
+
 set history=200
 filetype plugin on
 filetype indent on
