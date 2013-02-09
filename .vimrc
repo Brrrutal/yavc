@@ -19,11 +19,14 @@ set guifont=Andale\ Mono:h14
 syntax enable
 
 try
-    colorscheme desert
+    colorscheme xoria256
 catch
 endtry
 
 " Various experimental settings
 
 " Make tabs always visible in UI.
-set showtabline=2
+" set showtabline=2
+
+" Remove toolbar from UI.
+set go-=T
