@@ -1,4 +1,5 @@
 " Launching pathogen
+" Test
 execute pathogen#infect()
 execute pathogen#helptags()
 
