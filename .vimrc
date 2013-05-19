@@ -35,6 +35,7 @@ set laststatus=2
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
 
 " Various experimental settings
+set virtualedit=all
 
 " Make tabs always visible in UI.
 " set showtabline=2
