@@ -23,6 +23,9 @@ set shiftwidth=4
 set expandtab
 set tabstop=4
 
+" Ignores case when using all lowercase letters in search.
+set ignorecase smartcase
+
 set number
 
 " Set command line height to 2
@@ -52,6 +55,9 @@ set virtualedit=all
 " Remove toolbar from UI.
 set go-=T
 
+"
+" Plugin Settings
+"
 
 " Some NERDTree settings
 " Toggle the NERD Tree on an off
