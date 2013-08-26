@@ -1,8 +1,20 @@
 " Launching pathogen
-" Test
 execute pathogen#infect()
 execute pathogen#helptags()
 
+" Platform-specific settings
+if has('win16') || has('win32') || has('win64') || has('win95')
+    " Some Windows-specific setup
+    set guifont=Consolas:h13
+    set lines=45 columns=140
+    winpos 100 50
+else
+    " Fonts
+    " TODO: Check whether it works on Linux.
+    set guifont=Andale\ Mono:h14
+endif
+
+" Essential
 set history=200
 filetype plugin on
 filetype indent on
@@ -18,9 +30,6 @@ set ch=2
 
 " Turn the beep off
 set vb
-
-" Fonts
-set guifont=Andale\ Mono:h14
 
 " Colors
 syntax enable
