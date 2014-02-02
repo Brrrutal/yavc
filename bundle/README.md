@@ -1,1 +1,1 @@
-This is the place for vim plugins, managed by pathogen.
+This is the place for vim plugins, managed by Vundle.

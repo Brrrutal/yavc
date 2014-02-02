@@ -1,2 +1,4 @@
 # ViM temp files
 *.swp
+bundle/**
+~bundle/vundle

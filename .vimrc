@@ -10,6 +10,10 @@ Bundle 'gmarik/vundle'
 
 " My bundles here:
 "
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'jwhitley/vim-matchit'
+Bundle 'kien/ctrlp.vim'
 " original repos on GitHub
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
