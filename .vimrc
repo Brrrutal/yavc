@@ -14,6 +14,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'jwhitley/vim-matchit'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+
 " original repos on GitHub
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
@@ -34,7 +38,7 @@ if has('win16') || has('win32') || has('win64') || has('win95')
 else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=Andale\ Mono:h14
+    set guifont=Source\ Code\ Pro\ Light:h14
 endif
 
 " Essential
