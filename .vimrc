@@ -1,6 +1,3 @@
-" Launching pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
 
 " Platform-specific settings
 if has('win16') || has('win32') || has('win64') || has('win95')
