@@ -33,7 +33,8 @@ Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'jwhitley/vim-matchit'
-Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'     
+Plugin 'godlygeek/tabular'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -47,7 +48,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 
-filetype plugin indent on     " required!
+call vundle#end()         " required!
+filetype plugin indent on " required!
 
 " Platform-specific settings
 if has('win16') || has('win32') || has('win64') || has('win95')
