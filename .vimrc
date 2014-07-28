@@ -1,28 +1,42 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
+" Install Vundle if it doesn't exist (currently solution for non-Windows)
+if !(has('win16') || has('win32') || has('win64') || has('win95'))
+    let iCanHazVundle=1
+    let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+    if !filereadable(vundle_readme)
+        echo "Installing Vundle.."
+        echo ""
+        silent !mkdir -p ~/.vim/bundle
+        silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+        let iCanHazVundle=0
+    endif
+endif
+
+" Setup vundle
 if has('win16') || has('win32') || has('win64') || has('win95')
     set rtp+=~/vimfiles/bundle/vundle/
     let path='~/vimfiles/bundle'
-    call vundle#rc()
+    call vundle#begin()
 else
     set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
+    call vundle#begin()
 endif
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " My bundles here:
 "
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'jwhitley/vim-matchit'
-Bundle 'kien/ctrlp.vim'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'jwhitley/vim-matchit'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " original repos on GitHub
 "Bundle 'tpope/vim-fugitive'
