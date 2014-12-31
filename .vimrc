@@ -15,6 +15,7 @@ if !(has('win16') || has('win32') || has('win64') || has('win95'))
 else
     " Experimental Windows support.
     let iCanHazVundle=1
+    let vundle_readme=expand('~/vimfiles/bundle/vundle/README.md')
     if !filereadable(vundle_readme)
         echo "Installing Vundle.."
         echo ""
@@ -28,7 +29,7 @@ endif
 if has('win16') || has('win32') || has('win64') || has('win95')
     set rtp+=~/vimfiles/bundle/vundle/
     let path='~/vimfiles/bundle'
-    call vundle#begin()
+    call vundle#begin(path)
 else
     set rtp+=~/.vim/bundle/vundle/
     call vundle#begin()
