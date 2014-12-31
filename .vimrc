@@ -47,6 +47,7 @@ Plugin 'jwhitley/vim-matchit'
 Plugin 'kien/ctrlp.vim'     
 Plugin 'godlygeek/tabular'
 Plugin 'bkad/CamelCaseMotion'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -72,7 +73,7 @@ if has('win16') || has('win32') || has('win64') || has('win95')
 else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=Source\ Code\ Pro\ Light:h14
+    set guifont=Input:h14
 endif
 
 " Essential

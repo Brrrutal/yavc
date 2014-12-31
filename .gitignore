@@ -2,3 +2,5 @@
 *.swp
 bundle/**
 ~bundle/vundle
+
+.netrwhist
