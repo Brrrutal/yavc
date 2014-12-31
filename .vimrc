@@ -12,6 +12,16 @@ if !(has('win16') || has('win32') || has('win64') || has('win95'))
         silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
         let iCanHazVundle=0
     endif
+else
+    " Experimental Windows support.
+    let iCanHazVundle=1
+    if !filereadable(vundle_readme)
+        echo "Installing Vundle.."
+        echo ""
+        silent !mkdir -p '~/vimfiles/bundle'
+        silent execute '!git clone https://github.com/gmarik/vundle '.expand("~/vimfiles/bundle/vundle")
+        let iCanHazVundle=0
+    endif
 endif
 
 " Setup vundle
@@ -54,7 +64,7 @@ filetype plugin indent on " required!
 " Platform-specific settings
 if has('win16') || has('win32') || has('win64') || has('win95')
     " Some Windows-specific setup
-    set guifont=Consolas:h13
+    set guifont=InputMonoNarrow:h11
     set lines=45 columns=140
     winpos 100 50
 else
