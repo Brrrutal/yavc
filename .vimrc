@@ -51,6 +51,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'bling/vim-airline'
 
 " original repos on GitHub
 "Bundle 'tpope/vim-fugitive'
