@@ -74,7 +74,7 @@ if has('win16') || has('win32') || has('win64') || has('win95')
 else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=Input:h14
+    set guifont=Menlo:h14
 endif
 
 " Essential
@@ -121,13 +121,6 @@ set go-=T
 "
 " Plugin Settings
 "
+" Airline settings
+let g:airline_powerline_fonts = 1
 
-" Some NERDTree settings
-" Toggle the NERD Tree on an off
-nmap <C-N> :NERDTreeToggle<CR>
-
-" Close the NERD Tree with Shift-F7
-" nmap <S-F7> :NERDTreeClose<CR>
-
-" Show the bookmarks table on startup
-let NERDTreeShowBookmarks=1
