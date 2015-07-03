@@ -36,7 +36,7 @@ else
 endif
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'gmarik/vundle'
 
 " My bundles here:
@@ -44,7 +44,7 @@ Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'jwhitley/vim-matchit'
-Plugin 'kien/ctrlp.vim'     
+Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'plasticboy/vim-markdown'
@@ -74,7 +74,7 @@ if has('win16') || has('win32') || has('win64') || has('win95')
 else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=Menlo:h14
+    set guifont=InputMonoNarrow\ Thin:h14
 endif
 
 " Essential
@@ -90,6 +90,7 @@ set tabstop=4
 set ignorecase smartcase
 
 set number
+set relativenumber
 
 " Set command line height to 2
 set ch=2
