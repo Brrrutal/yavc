@@ -114,6 +114,8 @@ set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
 
 " Various experimental settings
 set virtualedit=all
+set listchars=tab:▸\ ,eol:¬
+
 
 " Make tabs always visible in UI.
 " set showtabline=2
