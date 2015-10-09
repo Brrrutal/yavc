@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
+set encoding=utf-8
 
 " Install Vundle if it doesn't exist (currently solution for non-Windows)
 if !(has('win16') || has('win32') || has('win64') || has('win95'))
@@ -74,7 +75,7 @@ if has('win16') || has('win32') || has('win64') || has('win95')
 else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=InputMonoNarrow\ Thin:h14
+    set guifont=Input:h13
 endif
 
 " Essential
@@ -106,6 +107,7 @@ try
 catch
 endtry
 
+
 " Setting up status line
 set laststatus=2
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
@@ -125,3 +127,20 @@ set go-=T
 " Airline settings
 let g:airline_powerline_fonts = 1
 
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
