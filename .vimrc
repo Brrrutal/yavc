@@ -53,9 +53,9 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-easytags'
 
 " original repos on GitHub
 "Bundle 'tpope/vim-fugitive'
