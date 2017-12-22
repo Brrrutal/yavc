@@ -70,16 +70,16 @@ call vundle#end()         " required!
 filetype plugin indent on " required!
 
 " Platform-specific settings
-if has('win16') || has('win32') || has('win64') || has('win95')
+"if has('win16') || has('win32') || has('win64') || has('win95')
     " Some Windows-specific setup
-    set guifont=InputMonoNarrow:h11
-    set lines=45 columns=140
-    winpos 100 50
-else
+"    set guifont=InputMonoNarrow:h11
+"    set lines=45 columns=140
+"    winpos 100 50
+"else
     " Fonts
     " TODO: Check whether it works on Linux.
-    set guifont=Roboto\ Mono\ Light\ for\ Powerline:h15  
-endif
+"    set guifont=Roboto\ Mono\ Light\ for\ Powerline:h15  
+"endif
 
 " Essential
 set history=200
@@ -124,7 +124,7 @@ set listchars=tab:▸\ ,eol:¬
 " set showtabline=2
 
 " Remove toolbar from UI.
-set go-=T
+"set go-=T
 
 "
 " Plugin Settings
