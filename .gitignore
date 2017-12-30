@@ -1,6 +1,7 @@
 # ViM temp files
 *.swp
 bundle/**
+plugged/**
 ~bundle/vundle
 
 .netrwhist
